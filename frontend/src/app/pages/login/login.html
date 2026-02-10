@@ -1,0 +1,27 @@
+<section class="auth-page">
+    <div class="auth-card">
+        <div class="auth-header">
+            <span class="auth-icon">⛷️</span>
+            <h1>Willkommen zurück</h1>
+            <p>Melde dich an, um fortzufahren</p>
+        </div>
+
+        <form class="auth-form">
+            <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" placeholder="deine@email.ch" disabled>
+            </div>
+            <div class="form-group">
+                <label for="password">Passwort</label>
+                <input type="password" id="password" placeholder="••••••••" disabled>
+            </div>
+            <button type="submit" class="btn-submit" disabled>Anmelden</button>
+        </form>
+
+        <div class="auth-footer">
+            <p>Noch kein Konto? <a routerLink="/register">Jetzt registrieren</a></p>
+        </div>
+
+        <p class="placeholder-note">🚧 Login wird in BERG-7 implementiert</p>
+    </div>
+</section>

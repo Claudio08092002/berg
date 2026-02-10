@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:16-alpine
+    container_name: berg-postgres
+    environment:
+      POSTGRES_DB: berg_db
+      POSTGRES_USER: berg_user
+      POSTGRES_PASSWORD: berg_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - berg_data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+volumes:
+  berg_data:

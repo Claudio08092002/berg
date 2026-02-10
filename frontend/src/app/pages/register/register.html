@@ -1,0 +1,61 @@
+<section class="auth-page">
+    <div class="auth-card">
+        <div class="auth-header">
+            <span class="auth-icon">🏔️</span>
+            <h1>Konto erstellen</h1>
+            <p>Registriere dich, um Touren zu buchen</p>
+        </div>
+
+        <form class="auth-form">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">Vorname</label>
+                    <input type="text" id="firstName" placeholder="Max" disabled>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Nachname</label>
+                    <input type="text" id="lastName" placeholder="Muster" disabled>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" placeholder="deine@email.ch" disabled>
+            </div>
+            <div class="form-group">
+                <label for="password">Passwort</label>
+                <input type="password" id="password" placeholder="Mindestens 8 Zeichen" disabled>
+            </div>
+            <div class="form-group">
+                <label for="passwordConfirm">Passwort bestätigen</label>
+                <input type="password" id="passwordConfirm" placeholder="Passwort wiederholen" disabled>
+            </div>
+
+            <div class="role-selector">
+                <label class="role-option">
+                    <input type="radio" name="role" value="customer" checked disabled>
+                    <div class="role-card">
+                        <span>🎿</span>
+                        <strong>Kunde</strong>
+                        <small>Touren buchen</small>
+                    </div>
+                </label>
+                <label class="role-option">
+                    <input type="radio" name="role" value="guide" disabled>
+                    <div class="role-card">
+                        <span>🧭</span>
+                        <strong>Guide</strong>
+                        <small>Touren anbieten</small>
+                    </div>
+                </label>
+            </div>
+
+            <button type="submit" class="btn-submit" disabled>Registrieren</button>
+        </form>
+
+        <div class="auth-footer">
+            <p>Bereits ein Konto? <a routerLink="/login">Jetzt anmelden</a></p>
+        </div>
+
+        <p class="placeholder-note">🚧 Registrierung wird in BERG-7 implementiert</p>
+    </div>
+</section>
